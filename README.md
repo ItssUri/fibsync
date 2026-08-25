@@ -2,6 +2,8 @@
 
 A small Next.js dashboard for checking the current class status, timetable, and upcoming exams for the FIB student schedule.
 
+You can see an example of a current deployed fibsync app [here](https://fibsync.vercel.app/)
+
 ## Requirements
 
 - Node.js 20+
