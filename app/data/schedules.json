@@ -536,5 +536,127 @@
       "aules": "A6001",
       "idioma": "English"
     }
-  ]
+  ],
+  "Calvazo": [
+        {
+            "codi_assig": "CI",
+            "grup": "30",
+            "dia_setmana": 1,
+            "inici": "10:00",
+            "durada": 2,
+            "tipus": "T",
+            "aules": "A6102",
+            "idioma": "Català"
+        },
+        {
+            "codi_assig": "PE",
+            "grup": "32",
+            "dia_setmana": 1,
+            "inici": "12:00",
+            "durada": 2,
+            "tipus": "P",
+            "aules": "A6201",
+            "idioma": "Català"
+        },
+        {
+            "codi_assig": "SO",
+            "grup": "32",
+            "dia_setmana": 2,
+            "inici": "08:00",
+            "durada": 2,
+            "tipus": "L",
+            "aules": "A5S111",
+            "idioma": "Català"
+        },
+        {
+            "codi_assig": "EDA",
+            "grup": "32",
+            "dia_setmana": 2,
+            "inici": "10:00",
+            "durada": 1,
+            "tipus": "P",
+            "aules": "D6004",
+            "idioma": "English"
+        },
+        {
+            "codi_assig": "EDA",
+            "grup": "32",
+            "dia_setmana": 2,
+            "inici": "10:00",
+            "durada": 2,
+            "tipus": "L",
+            "aules": "C6S308",
+            "idioma": "English"
+        },
+        {
+            "codi_assig": "EDA",
+            "grup": "32",
+            "dia_setmana": 2,
+            "inici": "11:00",
+            "durada": 1,
+            "tipus": "P",
+            "aules": "D6004",
+            "idioma": "English"
+        },
+        {
+            "codi_assig": "BD",
+            "grup": "30",
+            "dia_setmana": 2,
+            "inici": "12:00",
+            "durada": 2,
+            "tipus": "T",
+            "aules": "A3001",
+            "idioma": "Català"
+        },
+        {
+            "codi_assig": "SO",
+            "grup": "30",
+            "dia_setmana": 3,
+            "inici": "08:00",
+            "durada": 2,
+            "tipus": "T",
+            "aules": "A6001",
+            "idioma": "Català"
+        },
+        {
+            "codi_assig": "EDA",
+            "grup": "30",
+            "dia_setmana": 3,
+            "inici": "10:00",
+            "durada": 2,
+            "tipus": "T",
+            "aules": "A6001",
+            "idioma": "English"
+        },
+        {
+            "codi_assig": "CI",
+            "grup": "32",
+            "dia_setmana": 4,
+            "inici": "08:00",
+            "durada": 2,
+            "tipus": "L",
+            "aules": "C5S203",
+            "idioma": "Català"
+        },
+        {
+            "codi_assig": "PE",
+            "grup": "32",
+            "dia_setmana": 4,
+            "inici": "10:00",
+            "durada": 2,
+            "tipus": "L",
+            "aules": "A3106",
+            "idioma": "Català"
+        },
+        {
+            "codi_assig": "BD",
+            "grup": "32",
+            "dia_setmana": 4,
+            "inici": "12:00",
+            "durada": 2,
+            "tipus": "L",
+            "aules": "B5S201",
+            "idioma": "Català"
+        }
+    ]
 }
