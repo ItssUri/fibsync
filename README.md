@@ -16,17 +16,19 @@ A small Next.js dashboard for checking the current class status, timetable, and 
 pnpm install
 ```
 
-2. Copy the example environment file and add your credentials:
+1. Copy the example environment file and add your credentials:
 
 ```bash
 cp .env.example .env
 ```
 
-3. Update `.env` with your API client ID:
+1. Update `.env` with your API client ID:
 
 ```bash
 FIB_API_CLIENT_ID=your_client_id
 ```
+
+1. Update `app/data/schedules.json` with your desired schedules, you can find this in the [FIB API](https://api.fib.upc.edu/v2/jo/classes)
 
 ## Run locally
 
@@ -34,7 +36,7 @@ FIB_API_CLIENT_ID=your_client_id
 pnpm dev
 ```
 
-Then open http://localhost:3000.
+Then open <http://localhost:3000>.
 
 ## Production build
 
