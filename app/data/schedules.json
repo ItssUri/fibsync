@@ -659,5 +659,137 @@
             "idioma": "Català"
         }
     ],
-  "DMBoom": [{"codi_assig":"CI","grup":"13","dia_setmana":1,"inici":"08:00","durada":2,"tipus":"L","aules":"C5S202","idioma":"Català"},{"codi_assig":"SO","grup":"13","dia_setmana":1,"inici":"10:00","durada":2,"tipus":"L","aules":"A5S102","idioma":"Castellano, English"},{"codi_assig":"BD","grup":"10","dia_setmana":2,"inici":"08:00","durada":2,"tipus":"T","aules":"A6E02","idioma":"Català"},{"codi_assig":"PE","grup":"12","dia_setmana":2,"inici":"10:00","durada":2,"tipus":"P","aules":"A4206","idioma":"Castellano"},{"codi_assig":"EDA","grup":"12","dia_setmana":2,"inici":"12:00","durada":1,"tipus":"L","aules":"C6S308","idioma":"Català"},{"codi_assig":"EDA","grup":"12","dia_setmana":2,"inici":"12:00","durada":1,"tipus":"P","aules":"D6004","idioma":"Català"},{"codi_assig":"EDA","grup":"12","dia_setmana":2,"inici":"13:00","durada":1,"tipus":"L","aules":"C6S308","idioma":"Català"},{"codi_assig":"EDA","grup":"12","dia_setmana":2,"inici":"13:00","durada":1,"tipus":"P","aules":"D6004","idioma":"Català"},{"codi_assig":"BD","grup":"14","dia_setmana":4,"inici":"10:00","durada":2,"tipus":"L","aules":"B5S101","idioma":"Català"},{"codi_assig":"CI","grup":"10","dia_setmana":4,"inici":"12:00","durada":2,"tipus":"T","aules":"A3205","idioma":"Català"},{"codi_assig":"EDA","grup":"10","dia_setmana":5,"inici":"08:00","durada":2,"tipus":"T","aules":"A4002","idioma":"Català"},{"codi_assig":"PE","grup":"12","dia_setmana":5,"inici":"10:00","durada":2,"tipus":"L","aules":"A6001","idioma":"Castellano"},{"codi_assig":"SO","grup":"10","dia_setmana":5,"inici":"12:00","durada":2,"tipus":"T","aules":"A6002","idioma":"English"}]
+  "DMBoom": [{"codi_assig":"CI","grup":"13","dia_setmana":1,"inici":"08:00","durada":2,"tipus":"L","aules":"C5S202","idioma":"Català"},{"codi_assig":"SO","grup":"13","dia_setmana":1,"inici":"10:00","durada":2,"tipus":"L","aules":"A5S102","idioma":"Castellano, English"},{"codi_assig":"BD","grup":"10","dia_setmana":2,"inici":"08:00","durada":2,"tipus":"T","aules":"A6E02","idioma":"Català"},{"codi_assig":"PE","grup":"12","dia_setmana":2,"inici":"10:00","durada":2,"tipus":"P","aules":"A4206","idioma":"Castellano"},{"codi_assig":"EDA","grup":"12","dia_setmana":2,"inici":"12:00","durada":1,"tipus":"L","aules":"C6S308","idioma":"Català"},{"codi_assig":"EDA","grup":"12","dia_setmana":2,"inici":"12:00","durada":1,"tipus":"P","aules":"D6004","idioma":"Català"},{"codi_assig":"EDA","grup":"12","dia_setmana":2,"inici":"13:00","durada":1,"tipus":"L","aules":"C6S308","idioma":"Català"},{"codi_assig":"EDA","grup":"12","dia_setmana":2,"inici":"13:00","durada":1,"tipus":"P","aules":"D6004","idioma":"Català"},{"codi_assig":"BD","grup":"14","dia_setmana":4,"inici":"10:00","durada":2,"tipus":"L","aules":"B5S101","idioma":"Català"},{"codi_assig":"CI","grup":"10","dia_setmana":4,"inici":"12:00","durada":2,"tipus":"T","aules":"A3205","idioma":"Català"},{"codi_assig":"EDA","grup":"10","dia_setmana":5,"inici":"08:00","durada":2,"tipus":"T","aules":"A4002","idioma":"Català"},{"codi_assig":"PE","grup":"12","dia_setmana":5,"inici":"10:00","durada":2,"tipus":"L","aules":"A6001","idioma":"Castellano"},{"codi_assig":"SO","grup":"10","dia_setmana":5,"inici":"12:00","durada":2,"tipus":"T","aules":"A6002","idioma":"English"}],
+  "Cano": [
+        {
+            "codi_assig": "BD",
+            "grup": "10",
+            "dia_setmana": 2,
+            "inici": "08:00",
+            "durada": 2,
+            "tipus": "T",
+            "aules": "A6E02",
+            "idioma": "Català"
+        },
+        {
+            "codi_assig": "EDA",
+            "grup": "11",
+            "dia_setmana": 2,
+            "inici": "12:00",
+            "durada": 1,
+            "tipus": "L",
+            "aules": "C6S306",
+            "idioma": "Castellano"
+        },
+        {
+            "codi_assig": "EDA",
+            "grup": "11",
+            "dia_setmana": 2,
+            "inici": "12:00",
+            "durada": 1,
+            "tipus": "P",
+            "aules": "A6203",
+            "idioma": "Castellano"
+        },
+        {
+            "codi_assig": "EDA",
+            "grup": "11",
+            "dia_setmana": 2,
+            "inici": "13:00",
+            "durada": 1,
+            "tipus": "L",
+            "aules": "C6S306",
+            "idioma": "Castellano"
+        },
+        {
+            "codi_assig": "EDA",
+            "grup": "11",
+            "dia_setmana": 2,
+            "inici": "13:00",
+            "durada": 1,
+            "tipus": "P",
+            "aules": "A6203",
+            "idioma": "Castellano"
+        },
+        {
+            "codi_assig": "CI",
+            "grup": "61",
+            "dia_setmana": 2,
+            "inici": "14:00",
+            "durada": 2,
+            "tipus": "L",
+            "aules": "C5S202",
+            "idioma": "Castellano"
+        },
+        {
+            "codi_assig": "PE",
+            "grup": "42",
+            "dia_setmana": 2,
+            "inici": "16:00",
+            "durada": 2,
+            "tipus": "L",
+            "aules": "A6104",
+            "idioma": "Català"
+        },
+        {
+            "codi_assig": "SO",
+            "grup": "50",
+            "dia_setmana": 3,
+            "inici": "15:00",
+            "durada": 2,
+            "tipus": "T",
+            "aules": "A6002",
+            "idioma": "Català"
+        },
+        {
+            "codi_assig": "BD",
+            "grup": "13",
+            "dia_setmana": 4,
+            "inici": "08:00",
+            "durada": 2,
+            "tipus": "L",
+            "aules": "A5S105",
+            "idioma": "Castellano"
+        },
+        {
+            "codi_assig": "PE",
+            "grup": "42",
+            "dia_setmana": 4,
+            "inici": "14:00",
+            "durada": 2,
+            "tipus": "P",
+            "aules": "A6206",
+            "idioma": "Català"
+        },
+        {
+            "codi_assig": "EDA",
+            "grup": "10",
+            "dia_setmana": 5,
+            "inici": "08:00",
+            "durada": 2,
+            "tipus": "T",
+            "aules": "A4002",
+            "idioma": "Català"
+        },
+        {
+            "codi_assig": "SO",
+            "grup": "52",
+            "dia_setmana": 5,
+            "inici": "14:00",
+            "durada": 2,
+            "tipus": "L",
+            "aules": "C6S309",
+            "idioma": "Català"
+        },
+        {
+            "codi_assig": "CI",
+            "grup": "60",
+            "dia_setmana": 5,
+            "inici": "16:00",
+            "durada": 2,
+            "tipus": "T",
+            "aules": "A6001",
+            "idioma": "Català"
+        }
+    ]
 }
