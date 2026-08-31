@@ -356,8 +356,8 @@ button {
 }
 
 .day-heading {
-  height: 64px;
-  padding: 15px 10px;
+  height: 40px;
+  padding: 12px 10px;
   border-bottom: 1px solid var(--line);
   color: var(--muted);
   font-family: var(--font-geist-mono), monospace;
