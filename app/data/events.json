@@ -118,6 +118,86 @@
             "assignatura":"EEE",
             "data":"2026-09-19",
             "grup":10
+        },
+        {
+            "nom":"S1",
+            "type":"laboratori",
+            "assignatura":"SO",
+            "data":"2026-09-14",
+            "grup":10
+        },
+        {
+            "nom":"S2",
+            "type":"laboratori",
+            "assignatura":"SO",
+            "data":"2026-09-21",
+            "grup":10
+        },
+        {
+            "nom":"S3",
+            "type":"laboratori",
+            "assignatura":"SO",
+            "data":"2026-09-28",
+            "grup":10
+        },
+        {
+            "nom":"SIMLAB1",
+            "desc":"Mock lab exam 1",
+            "type":"mock exam",
+            "assignatura":"SO",
+            "data":"2026-10-05",
+            "grup":10
+        },
+        {
+            "nom":"S4",
+            "type":"laboratori",
+            "assignatura":"SO",
+            "data":"2026-10-14",
+            "grup":10
+        },
+        {
+            "nom":"TestST",
+            "desc":"Theory follow-up short questionnaire on topics 1 and 2",
+            "type":"questionari",
+            "assignatura":"SO",
+            "data":"2026-09-14",
+            "grup":10
+        },
+        {
+            "nom":"S5",
+            "type":"laboratori",
+            "assignatura":"SO",
+            "data":"2026-10-26",
+            "grup":10
+        },
+        {
+            "nom":"S6",
+            "type":"laboratori",
+            "assignatura":"SO",
+            "data":"2026-11-16",
+            "grup":10
+        },
+        {
+            "nom":"S7",
+            "type":"laboratori",
+            "assignatura":"SO",
+            "data":"2026-11-23",
+            "grup":10
+        },
+        {
+            "nom":"SIMLAB2",
+            "desc":"Mock lab exam 2",
+            "type":"mock exam",
+            "assignatura":"SO",
+            "data":"2026-11-30",
+            "grup":10
+        },
+        {
+            "nom":"S8",
+            "type":"laboratori",
+            "assignatura":"SO",
+            "data":"2026-12-14",
+            "grup":10
         }
     ]
 }
