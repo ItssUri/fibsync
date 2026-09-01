@@ -3,6 +3,7 @@ import ThemeToggle from "@/components/ThemeToggle";
 import NowInClass from "@/components/NowInClass";
 import ExamsList from "@/components/ExamsList";
 import TimetableSection from "@/components/TimetableSection";
+import EventList from "@/components/EventList";
 
 export default function Home() {
   return (
@@ -19,6 +20,9 @@ export default function Home() {
       </header>
       <NowInClass />
       <TimetableSection />
+      <Suspense fallback={<p className="text-gray-500">Carregant esdeveniments...</p>}>
+        <EventList />
+      </Suspense>
       <Suspense fallback={<p className="text-gray-500">Carregant exàmens...</p>}>
         <ExamsList />
       </Suspense>

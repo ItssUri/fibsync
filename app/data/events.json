@@ -1,0 +1,123 @@
+{
+    "events": [
+        {
+            "nom": "L1a Proteus",
+            "desc": "Introducció a l’entorn de disseny Proteus",
+            "type": "laboratori",
+            "assignatura": "CI",
+            "data": "2026-09-14",
+            "grup": 10
+        },
+        {
+            "nom": "L1b Electrònica",
+            "desc": "Disseny de circuits a protoboard (E/S+portes+leds+AD+PWM+...)",
+            "type": "laboratori",
+            "assignatura": "CI",
+            "data": "2026-09-21",
+            "grup": 10
+        },
+        {
+            "nom": "L2a ES ASM",
+            "desc": "Configuració entrada-sortida amb EasyPIC programat en ASM",
+            "type": "laboratori",
+            "assignatura": "CI",
+            "data": "2026-09-28",
+            "grup": 10
+        },
+        {
+            "nom": "L2b ES XC8",
+            "desc": "Configuració entrada-sortida amb 1x7-segments programat en C amb XC8",
+            "type": "laboratori",
+            "assignatura": "CI",
+            "data": "2026-10-05",
+            "grup": 10
+        },
+        {
+            "nom": "L3a 7-Segments",
+            "desc": "Continuació amb el display 4x7 segments.",
+            "type": "laboratori",
+            "assignatura": "CI",
+            "data": "2026-10-14",
+            "grup": 10
+        },
+        {
+            "nom": "L3b Interrupcions",
+            "desc": "Pràctica d’interrupcions.",
+            "type": "laboratori",
+            "assignatura": "CI",
+            "data": "2026-10-19",
+            "grup": 10
+        },
+        {
+            "nom": "L4a GLCD",
+            "desc": "Pràctica introductòria del display gràfic de cristall líquid i convertidor analògic-digital ADC.",
+            "type": "laboratori",
+            "assignatura": "CI",
+            "data": "2026-10-26",
+            "grup": 10
+        },
+        {
+            "nom": "L4b Timer",
+            "desc": "Pràctica sobre timers.",
+            "type": "laboratori",
+            "assignatura": "CI",
+            "data": "2026-11-09",
+            "grup": 10
+        },
+        {
+            "nom": "TxT",
+            "desc": "Pràctica solidària, dirigida per Tecnologia per Tothom (txt.upc.es).",
+            "type": "laboratori",
+            "assignatura": "CI",
+            "data": "2026-11-16",
+            "grup": 10
+        },
+        {
+            "nom": "L6a CCP",
+            "desc": "Pràctica del mòdul de sortida CCP.",
+            "type": "laboratori",
+            "assignatura": "CI",
+            "data": "2026-11-23",
+            "grup": 10
+        },
+        {
+            "nom": "Xerrada Reutilitza",
+            "desc": "Xerrada sobre l’impacte de les IT.",
+            "type": "xerrada",
+            "assignatura": "CI",
+            "data": "2026-11-23"
+        },
+        {
+            "nom": "L6b Integració",
+            "desc": "Pràctica per integrar diferents mòduls.",
+            "type": "laboratori",
+            "assignatura": "CI",
+            "data": "2026-11-30",
+            "grup": 10
+        },
+        {
+            "nom": "L7a Línia Sèrie",
+            "desc": "Pràctica sobre comunicacions amb Línia sèrie.",
+            "type": "laboratori",
+            "assignatura": "CI",
+            "data": "2026-12-14",
+            "grup": 10
+        },
+        {
+            "nom": "L7b Projecte",
+            "desc": "Pràctica d’integració dels conceptes adquirits durant el cu",
+            "type": "laboratori",
+            "assignatura": "CI",
+            "data": "2026-12-30",
+            "grup": 10
+        },
+        {
+            "nom":"PEC1",
+            "desc":"Argentina: Recuperació històrica o via lliure al desastre?",
+            "type":"pràctica",
+            "assignatura":"EEE",
+            "data":"2026-09-19",
+            "grup":10
+        }
+    ]
+}
