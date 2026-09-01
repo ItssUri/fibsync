@@ -10,7 +10,18 @@ export default async function ExamsList() {
       {exams.length === 0 ? (
         <p className="empty-state">No hi ha exàmens propers.</p>
       ) : (
-        <ul className="exam-list">
+        <ul
+          className="
+            exam-list 
+            grid 
+            grid-cols-1
+            sm:grid-cols-2
+            lg:grid-cols-3
+            gap-2
+            mt-2
+          "
+          style={{ listStyle: "none", paddingLeft: 0 }}
+        >
           {exams.map((exam) => (
             <li
               key={exam.id}

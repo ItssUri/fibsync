@@ -25,17 +25,21 @@ export default function NowInClass() {
         {inClass.length === 0 ? (
           <p className="empty-state">Ningú a classe ara mateix.</p>
         ) : (
-          <ul className="status-list">
+          <ul
+            className="status-list grid grid-cols-1 md:grid-cols-2 gap-1"
+            /* PC = md: 2 columnes, mobile = 1 columna */
+            style={{ listStyle: "none", paddingLeft: 0 }}
+          >
             {inClass.map(({ person, block }) => {
               const subjectColor = block?.codi_assig ? getColorAssignatura(block.codi_assig) : "#79b36c";
               const classType =
                 block?.tipus === "T"
                   ? "Teoria"
                   : block?.tipus === "P"
-                    ? "Problemes"
-                    : block?.tipus === "L"
-                      ? "Laboratori"
-                      : "Classe";
+                  ? "Problemes"
+                  : block?.tipus === "L"
+                  ? "Laboratori"
+                  : "Classe";
 
               return (
                 <li
