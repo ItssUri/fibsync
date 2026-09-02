@@ -303,7 +303,7 @@ export default function EventList() {
               >
                 <div className="flex items-center justify-between gap-4 mb-2">
                   <div className="flex flex-col min-w-0">
-                    <span className="font-semibold text-base truncate" style={{ color: "var(--ink)" }}>
+                    <span className="font-semibold text-base truncate" style={{ color: "var(--ink)" }} title={event.nom}>
                       {event.nom}
                     </span>
                     <span
