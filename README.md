@@ -53,6 +53,7 @@ The project is configured for a standalone Next.js build, which is suitable for 
 
 - The app reads exam data from the FIB API.
 - The timetable is backed by the local schedule data in `app/data/schedules.json`.
+- The events are backed by the local event data in `app/data/events.json`
 - The build is intended to be deployed with the environment variable set at runtime.
 
 ## License
