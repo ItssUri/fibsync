@@ -18,19 +18,38 @@ You can see an example of a current deployed fibsync app [here](https://fibsync.
 pnpm install
 ```
 
-1. Copy the example environment file and add your credentials:
+2. Copy the example environment file and add your credentials:
 
 ```bash
 cp .env.example .env
 ```
 
-1. Update `.env` with your API client ID:
+3. Update `.env` with your API client ID:
 
 ```bash
 FIB_API_CLIENT_ID=your_client_id
 ```
 
-1. Update `app/data/schedules.json` with your desired schedules, you can find this in the [FIB API](https://api.fib.upc.edu/v2/jo/classes)
+4. Update `app/data/schedules.json` with your desired schedules, you can find this in the [FIB API](https://api.fib.upc.edu/v2/jo/classes)
+
+5. Update `app/data/events.json` with your desired events. An event follows the following structure:
+```json
+{
+    "nom":"event-name",
+    "type":"event-type", // free, usually laboratori, problemes, questionari...
+    "assignatura":"event-subject", // if it is a FIB subject, it will grab its color
+    "data": [
+        {
+            "grup": XX, // must be a number
+            "dia": "2026-01-01"
+        },
+        {
+            "grup": YY, // must be a number
+            "dia": "2026-02-02"
+        }
+    ]
+},
+```
 
 ## Run locally
 
