@@ -480,4 +480,80 @@ button {
     grid-template-columns: 1fr;
     gap: 28px;
   }
+
+  @media (max-width: 600px) {
+    
+  
+
+  /* Timetable mobile squishing start */
+
+  .timetable-scroll {
+    overflow-x: visible;
+  }
+
+  .timetable-frame {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .time-column {
+    width: 30px;
+    flex: 0 0 30px;
+    font-size: 0.54rem;
+  }
+
+  .day-column {
+    min-width: 0;
+    flex: 1 1 0;
+  }
+
+  .day-heading {
+    padding: 8px 2px;
+    font-size: 0.60rem;
+  }
+
+  .time-label {
+    height: 40px;
+    padding: 0px 4px 0 0;
+    font-size: 0.54rem;
+  }
+
+  .day-body {
+    height: 420px;
+    background-image: linear-gradient(to bottom, transparent 34px, var(--line) 35px);
+    background-size: 100% 35px;
+  }
+
+  .class-block {
+    padding: 4px 2.5px;
+    font-size: 0.54rem;
+    left: 2px;
+    right: 2px;
+  }
+
+  .class-block strong {
+    font-size: 0.6rem;
+    margin-bottom: 2px;
+  }
+
+  .class-block-header {
+    gap: 3px;
+  }
+
+  .class-block-language {
+    min-width: 1.3em;
+    padding: 1px 3px;
+    font-size: 0.45rem;
+    display: none;
+  }
+
+  .hores-horari {
+    display: none;
+  }
+
+  .class-block-type {
+    font-size: 6px;
+  }
+  /* Timetable mobile squishing end */
+}
 }

@@ -228,15 +228,14 @@ export default function TimetableGrid({ blocks, showPerson = false }: Props) {
                             <strong>{b.codi_assig} · {b.grup}</strong>
                             {languageCode ? <span className="class-block-language">{languageCode}</span> : null}
                           </div>
-                          <div>
+                          <div className="class-block-type">
                             {b.tipus === "T"
                               ? "Teoria"
                               : b.tipus === "P"
                               ? "Problemes"
                               : "Laboratori"} · {b.aules}
                           </div>
-                          {showPerson && b.person && <div>{b.person}</div>}
-                          <div style={{ fontSize: 10, opacity: 0.7 }}>
+                          <div style={{ fontSize: 10, opacity: 0.7 }} className='hores-horari'>
                             {b.inici} &ndash; {
                               (() => {
                                 const [h, m] = b.inici.split(":").map(Number);
