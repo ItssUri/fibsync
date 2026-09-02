@@ -593,6 +593,89 @@
                     "dia": "2026-12-15"
                 }
             ]
+        },
+        {
+            "nom":"Diada de Catalunya",
+            "type":"dia festiu",
+            "assignatura":"FESTIU",
+            "data": [
+                {"dia":"2026-09-11"}
+            ]
+        },
+        {
+            "nom":"La Mercè",
+            "type":"dia festiu",
+            "assignatura":"FESTIU",
+            "data": [
+                {"dia":"2026-09-24"}
+            ]
+        },
+        {
+            "nom":"La Mercè",
+            "type":"lliure disposició",
+            "assignatura":"FESTIU",
+            "data": [
+                {"dia":"2026-09-25"}
+            ]
+        },
+        {
+            "nom":"Dia de la Hispanitat",
+            "type":"dia festiu",
+            "assignatura":"FESTIU",
+            "data": [
+                {"dia":"2026-10-12"}
+            ]
+        },
+        {
+            "nom":"Immaculada Concepció",
+            "type":"lliure disposició",
+            "assignatura":"FESTIU",
+            "data": [
+                {"dia":"2026-12-07"}
+            ]
+        },
+        {
+            "nom":"Immaculada Concepció",
+            "type":"dia festiu",
+            "assignatura":"FESTIU",
+            "data": [
+                {"dia":"2026-12-08"}
+            ]
+        },
+        {
+            "nom":"Vacances de Nadal",
+            "desc":"24/12-05/01",
+            "type":"dia festiu",
+            "assignatura":"FESTIU",
+            "data": [
+                {"dia":"2026-12-24"}
+            ]
+        },
+        {
+            "nom":"Vacances de Setmana Santa",
+            "desc":"22/03-25/03",
+            "type":"dia festiu",
+            "assignatura":"FESTIU",
+            "data": [
+                {"dia":"2027-03-22"}
+            ]
+        },
+        {
+            "nom":"Festa FIB",
+            "desc":"https://www.festafib.cat/",
+            "type":"festafib",
+            "assignatura":"FESTIU",
+            "data": [
+                {"dia":"2027-05-07"}
+            ]
+        },
+        {
+            "nom":"Segona Pasqua",
+            "type":"dia festiu",
+            "assignatura":"FESTIU",
+            "data": [
+                {"dia":"2027-05-17"}
+            ]
         }
     ]
 }

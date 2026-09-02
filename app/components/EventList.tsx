@@ -30,7 +30,7 @@ type FlattenedEvent = {
   type: string;
   assignatura: string;
   grup?: number | string;
-  date: string; // ISO string
+  date: string;
 };
 
 function compareEvents(a: FlattenedEvent, b: FlattenedEvent): number {
@@ -66,7 +66,6 @@ function hexToRgba20(hex: string): string {
   return `rgba(${r},${g},${b},0.1)`;
 }
 
-// Helper to flatten events with multi-date structure
 function flattenEvents(events: Event[]): FlattenedEvent[] {
   const out: FlattenedEvent[] = [];
   for (const ev of events) {
@@ -96,7 +95,6 @@ export default function EventList() {
     (async () => {
       const now = new Date();
       const allEvents = await fetchEvents();
-      // allEvents is Event[]
       setEvents(allEvents);
     })();
 
@@ -111,13 +109,11 @@ export default function EventList() {
     return () => window.removeEventListener("storage", handleStorage);
   }, []);
 
-  // Create a flattened array for filtering/rendering
   const flattenedEvents = useMemo(() => flattenEvents(events), [events]);
 
   const filteredEvents = useMemo(() => {
     let filtered = [...flattenedEvents];
 
-    // Period
     if (filterTime === "nextMonth") {
       const now = new Date();
       const { start, end } = getMonthRange(now);
@@ -127,12 +123,10 @@ export default function EventList() {
       });
     }
 
-    // Assignatura
     if (filterAssignatura) {
       filtered = filtered.filter((e) => e.assignatura === filterAssignatura);
     }
 
-    // Grup
     if (filterGrup) {
       filtered = filtered.filter((e) =>
         e.grup === undefined ||
@@ -141,10 +135,8 @@ export default function EventList() {
       );
     }
 
-    // Only show future events
     filtered = filtered.filter((e) => new Date(e.date) > new Date());
 
-    // Sort after filtering
     return filtered.sort(compareEvents);
   }, [flattenedEvents, filterAssignatura, filterGrup, filterTime]);
 
@@ -171,6 +163,14 @@ export default function EventList() {
     line: "var(--line)",
     paper: "var(--paper)",
   };
+
+  const FESTAFIB_IMG = "https://www.festafib.cat/assets/icon-CXyCn6LF.png";
+  const FESTAFIB_GRAY = "#B3B2AF";
+  const FESTAFIB_RED = "#C10000";
+
+  function festafibCardBg(): string {
+    return "rgba(179,178,175,0.09)";
+  }
 
   return (
     <section className="exams-panel" style={{ background: cssVars.background }}>
@@ -278,10 +278,22 @@ export default function EventList() {
           style={{ listStyle: "none", paddingLeft: 0 }}
         >
           {filteredEvents.map((event) => {
-            const color = getColorAssignatura(event.assignatura);
+            let color: string;
+            let cardBg: string;
+            let festafib = false;
+            if (event.type.toLowerCase() === 'festafib') {
+              festafib = true;
+              color = FESTAFIB_RED;
+              cardBg = festafibCardBg();
+            } else if (event.assignatura.toLowerCase() === 'festiu') {
+              color = "#69d1ce";
+              cardBg = hexToRgba20(color);
+            } else {
+              color = getColorAssignatura(event.assignatura);
+              cardBg = hexToRgba20(color);
+            }
 
             const isDarkTheme = theme === "dark";
-            const cardBg = hexToRgba20(color);
 
             return (
               <li
@@ -303,9 +315,25 @@ export default function EventList() {
               >
                 <div className="flex items-center justify-between gap-4 mb-2">
                   <div className="flex flex-col min-w-0">
-                    <span className="font-semibold text-base truncate" style={{ color: "var(--ink)" }} title={event.nom}>
-                      {event.nom}
-                    </span>
+                    <div className="flex items-center gap-2">
+                      {festafib && (
+                        <img
+                          src={FESTAFIB_IMG}
+                          alt="FestaFIB"
+                          style={{
+                            width: "1.6em",
+                            height: "1.6em",
+                            display: "inline-block",
+                            borderRadius: "0.33em",
+                            background: 'transparent',
+                            marginRight: "0em",
+                          }}
+                        />
+                      )}
+                      <span className="font-semibold text-base truncate" style={{ color: "var(--ink)" }} title={event.nom}>
+                        {event.nom}
+                      </span>
+                    </div>
                     <span
                       className="text-xs truncate"
                       style={{ color: "var(--muted)" }}
@@ -317,9 +345,11 @@ export default function EventList() {
                   <span
                     className="exam-type-badge rounded px-2 py-1 text-xs font-mono uppercase"
                     style={{
-                      backgroundColor: `${color}22`,
+                      backgroundColor: festafib ? `${FESTAFIB_RED}1A` : `${color}22`,
                       border: `1px solid ${color}`,
-                      color: isDarkTheme ? "var(--foreground)" : color,
+                      color: festafib
+                        ? FESTAFIB_RED
+                        : isDarkTheme ? "var(--foreground)" : color,
                     }}
                   >
                     {event.type.charAt(0).toUpperCase() + event.type.slice(1)}
@@ -329,8 +359,10 @@ export default function EventList() {
                   <span
                     className="exam-assignatura font-mono px-1 rounded bg-opacity-20"
                     style={{
-                      backgroundColor: `${color}1A`,
-                      color: isDarkTheme ? "var(--foreground)" : color,
+                      backgroundColor: festafib ? `${FESTAFIB_GRAY}1A` : `${color}1A`,
+                      color: festafib
+                        ? FESTAFIB_GRAY
+                        : isDarkTheme ? "var(--foreground)" : color,
                     }}
                   >
                     {event.assignatura}
