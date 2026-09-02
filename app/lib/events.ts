@@ -1,6 +1,4 @@
-import {Event} from "@/types/event";
-import {readFile} from "fs/promises";
-import {join} from "path";
+import { Event } from "@/types/event";
 import eventsData from "@/data/events.json";
 
 export async function fetchEvents(): Promise<Event[]> {
@@ -9,7 +7,6 @@ export async function fetchEvents(): Promise<Event[]> {
         desc: event.desc,
         type: event.type,
         assignatura: event.assignatura,
-        data: event.data,
-        grup: event.grup,
+        data: event.data
     }));
 }

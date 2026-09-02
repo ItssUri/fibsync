@@ -5,283 +5,435 @@
             "desc": "Introducció a l’entorn de disseny Proteus",
             "type": "laboratori",
             "assignatura": "CI",
-            "data": "2026-09-14",
-            "grup": 10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-09-14"
+                },
+                {
+                    "grup":30,
+                    "dia":"2026-09-20"
+                }
+            ]
         },
         {
             "nom": "L1b Electrònica",
             "desc": "Disseny de circuits a protoboard (E/S+portes+leds+AD+PWM+...)",
             "type": "laboratori",
             "assignatura": "CI",
-            "data": "2026-09-21",
-            "grup": 10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-09-21"
+                }
+            ]
         },
         {
             "nom": "L2a ES ASM",
             "desc": "Configuració entrada-sortida amb EasyPIC programat en ASM",
             "type": "laboratori",
             "assignatura": "CI",
-            "data": "2026-09-28",
-            "grup": 10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-09-28"
+                }
+            ]
         },
         {
             "nom": "L2b ES XC8",
             "desc": "Configuració entrada-sortida amb 1x7-segments programat en C amb XC8",
             "type": "laboratori",
             "assignatura": "CI",
-            "data": "2026-10-05",
-            "grup": 10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-10-05"
+                }
+            ]
         },
         {
             "nom": "L3a 7-Segments",
             "desc": "Continuació amb el display 4x7 segments.",
             "type": "laboratori",
             "assignatura": "CI",
-            "data": "2026-10-14",
-            "grup": 10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-10-14"
+                }
+            ]
         },
         {
             "nom": "L3b Interrupcions",
             "desc": "Pràctica d’interrupcions.",
             "type": "laboratori",
             "assignatura": "CI",
-            "data": "2026-10-19",
-            "grup": 10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-10-19"
+                }
+            ]
         },
         {
             "nom": "L4a GLCD",
             "desc": "Pràctica introductòria del display gràfic de cristall líquid i convertidor analògic-digital ADC.",
             "type": "laboratori",
             "assignatura": "CI",
-            "data": "2026-10-26",
-            "grup": 10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-10-26"
+                }
+            ]
         },
         {
             "nom": "L4b Timer",
             "desc": "Pràctica sobre timers.",
             "type": "laboratori",
             "assignatura": "CI",
-            "data": "2026-11-09",
-            "grup": 10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-11-09"
+                }
+            ]
         },
         {
             "nom": "TxT",
             "desc": "Pràctica solidària, dirigida per Tecnologia per Tothom (txt.upc.es).",
             "type": "laboratori",
             "assignatura": "CI",
-            "data": "2026-11-16",
-            "grup": 10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-11-16"
+                }
+            ]
         },
         {
             "nom": "L6a CCP",
             "desc": "Pràctica del mòdul de sortida CCP.",
             "type": "laboratori",
             "assignatura": "CI",
-            "data": "2026-11-23",
-            "grup": 10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-11-23"
+                }
+            ]
         },
         {
             "nom": "Xerrada Reutilitza",
             "desc": "Xerrada sobre l’impacte de les IT.",
             "type": "xerrada",
             "assignatura": "CI",
-            "data": "2026-11-23"
+            "data": [
+                {
+                    "dia": "2026-11-23"
+                }
+            ]
         },
         {
             "nom": "L6b Integració",
             "desc": "Pràctica per integrar diferents mòduls.",
             "type": "laboratori",
             "assignatura": "CI",
-            "data": "2026-11-30",
-            "grup": 10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-11-30"
+                }
+            ]
         },
         {
             "nom": "L7a Línia Sèrie",
             "desc": "Pràctica sobre comunicacions amb Línia sèrie.",
             "type": "laboratori",
             "assignatura": "CI",
-            "data": "2026-12-14",
-            "grup": 10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-12-14"
+                }
+            ]
         },
         {
             "nom": "L7b Projecte",
             "desc": "Pràctica d’integració dels conceptes adquirits durant el cu",
             "type": "laboratori",
             "assignatura": "CI",
-            "data": "2026-12-30",
-            "grup": 10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-12-30"
+                }
+            ]
         },
         {
             "nom":"PEC1",
             "desc":"Argentina: Recuperació històrica o via lliure al desastre?",
             "type":"pràctica",
             "assignatura":"EEE",
-            "data":"2026-09-19",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-09-19"
+                }
+            ]
         },
         {
             "nom":"S1",
             "type":"laboratori",
             "assignatura":"SO",
-            "data":"2026-09-14",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-09-14"
+                }
+            ]
         },
         {
             "nom":"S2",
             "type":"laboratori",
             "assignatura":"SO",
-            "data":"2026-09-21",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-09-21"
+                }
+            ]
         },
         {
             "nom":"S3",
             "type":"laboratori",
             "assignatura":"SO",
-            "data":"2026-09-28",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-09-28"
+                }
+            ]
         },
         {
             "nom":"SIMLAB1",
             "desc":"Mock lab exam 1",
             "type":"mock exam",
             "assignatura":"SO",
-            "data":"2026-10-05",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-10-05"
+                }
+            ]
         },
         {
             "nom":"S4",
             "type":"laboratori",
             "assignatura":"SO",
-            "data":"2026-10-14",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-10-14"
+                }
+            ]
         },
         {
             "nom":"TestST",
             "desc":"Theory follow-up short questionnaire on topics 1 and 2",
             "type":"questionari",
             "assignatura":"SO",
-            "data":"2026-09-14",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-09-14"
+                }
+            ]
         },
         {
             "nom":"S5",
             "type":"laboratori",
             "assignatura":"SO",
-            "data":"2026-10-26",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-10-26"
+                }
+            ]
         },
         {
             "nom":"S6",
             "type":"laboratori",
             "assignatura":"SO",
-            "data":"2026-11-16",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-11-16"
+                }
+            ]
         },
         {
             "nom":"S7",
             "type":"laboratori",
             "assignatura":"SO",
-            "data":"2026-11-23",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-11-23"
+                }
+            ]
         },
         {
             "nom":"SIMLAB2",
             "desc":"Mock lab exam 2",
             "type":"mock exam",
             "assignatura":"SO",
-            "data":"2026-11-30",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-11-30"
+                }
+            ]
         },
         {
             "nom":"S8",
             "type":"laboratori",
             "assignatura":"SO",
-            "data":"2026-12-14",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-12-14"
+                }
+            ]
         },
         {
             "nom":"ANÀLISI ALGORISMES (1)",
             "desc":" 1.1, 1.3, 1.7, 1.8, 1.9",
             "type":"problemes",
             "assignatura":"EDA",
-            "data":"2026-09-15",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-09-15"
+                }
+            ]
         },
         {
             "nom":"ANÀLISI ALGORISMES (2)",
             "desc":"1.12, 1.13, 1.14 (no (g)) , 1.18, 1.23",
             "type":"problemes",
             "assignatura":"EDA",
-            "data":"2026-09-22",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-09-22"
+                }
+            ]
         },
         {
             "nom":"DIVIDIR I VÈNCER",
             "desc":"A l'aula de teoria. 2.9, 2.10, 2.11, 2.12",
             "type":"laboratori",
             "assignatura":"EDA",
-            "data":"2026-10-02",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-10-02"
+                }
+            ]
         },
         {
             "nom":"DICCIONARIS",
             "desc":"3.1, 3.2, 3.3, ..., 3.10, 3.23, 3.24 (no esborrat) + exàmens si sobra temps",
             "type":"problemes",
             "assignatura":"EDA",
-            "data":"2026-10-13",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-10-13"
+                }
+            ]
         },
         {
             "nom":"CUES DE PRIORITAT",
             "desc":"4.1, 4.2, 4.3, 4.5, 4.9 (no (d)), 4.10, 4.11",
             "type":"problemes",
             "assignatura":"EDA",
-            "data":"2026-10-20",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-10-20"
+                }
+            ]
         },
         {
             "nom":"GRAFS (1)",
             "type":"laboratori",
             "assignatura":"EDA",
-            "data":"2026-10-27",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-10-27"
+                }
+            ]
         },
         {
             "nom":"GRAFS (2)",
             "type":"laboratori",
             "assignatura":"EDA",
-            "data":"2026-11-10",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-11-10"
+                }
+            ]
         },
         {
             "nom":"GRAFS",
             "desc":"5.5, 5.6, 5.12, 5.13, 5.14, 5.17, 5.18, 5.23, 5.24",
             "type":"problemes",
             "assignatura":"EDA",
-            "data":"2026-11-17",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-11-17"
+                }
+            ]
         },
         {
             "nom":"CERCA EXHAUSTIVA (1)",
             "type":"laboratori",
             "assignatura":"EDA",
-            "data":"2026-11-24",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-11-24"
+                }
+            ]
         },
         {
             "nom":"CERCA EXHAUSTIVA (2)",
             "type":"laboratori",
             "assignatura":"EDA",
-            "data":"2026-12-01",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-12-01"
+                }
+            ]
         },
         {
             "nom":"INTRACTABILITAT",
             "desc":"7.1, 7.2, 7.3, 7.4",
             "type":"problemes",
             "assignatura":"EDA",
-            "data":"2026-12-15",
-            "grup":10
+            "data": [
+                {
+                    "grup": 10,
+                    "dia": "2026-12-15"
+                }
+            ]
         }
     ]
 }

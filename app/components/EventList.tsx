@@ -1,7 +1,7 @@
 "use client";
 import { getColorAssignatura } from "@/lib/colors-assignatures";
 import { fetchEvents } from "@/lib/events";
-import { Event } from "@/types/event";
+import { Event, EventDateItem } from "@/types/event";
 import { useEffect, useState, useMemo } from "react";
 
 function isDarkColor(hex: string): boolean {
@@ -24,9 +24,18 @@ function formatEventDate(dateString: string) {
   return `${day} ${dayNum}/${month}`;
 }
 
-function compareEvents(a: Event, b: Event): number {
-  const aDate = new Date(a.data).getTime();
-  const bDate = new Date(b.data).getTime();
+type FlattenedEvent = {
+  nom: string;
+  desc: string;
+  type: string;
+  assignatura: string;
+  grup?: number | string;
+  date: string; // ISO string
+};
+
+function compareEvents(a: FlattenedEvent, b: FlattenedEvent): number {
+  const aDate = new Date(a.date).getTime();
+  const bDate = new Date(b.date).getTime();
   if (aDate !== bDate) return aDate - bDate;
   if (a.assignatura < b.assignatura) return -1;
   if (a.assignatura > b.assignatura) return 1;
@@ -36,9 +45,11 @@ function compareEvents(a: Event, b: Event): number {
 }
 
 function getMonthRange(from: Date) {
-  const nextMonth = new Date(from);
-  nextMonth.setMonth(from.getMonth() + 1);
-  return { start: from, end: nextMonth };
+  const start = new Date(from);
+  start.setHours(0, 0, 0, 0);
+  const nextMonth = new Date(start);
+  nextMonth.setMonth(start.getMonth() + 1);
+  return { start, end: nextMonth };
 }
 
 function unique<T>(array: T[]): T[] {
@@ -55,6 +66,24 @@ function hexToRgba20(hex: string): string {
   return `rgba(${r},${g},${b},0.1)`;
 }
 
+// Helper to flatten events with multi-date structure
+function flattenEvents(events: Event[]): FlattenedEvent[] {
+  const out: FlattenedEvent[] = [];
+  for (const ev of events) {
+    for (const item of ev.data) {
+      out.push({
+        nom: ev.nom,
+        desc: ev.desc,
+        type: ev.type,
+        assignatura: ev.assignatura,
+        grup: item.grup,
+        date: item.dia,
+      });
+    }
+  }
+  return out;
+}
+
 export default function EventList() {
   const [events, setEvents] = useState<Event[]>([]);
   const [theme, setTheme] = useState<string>("light");
@@ -67,8 +96,8 @@ export default function EventList() {
     (async () => {
       const now = new Date();
       const allEvents = await fetchEvents();
-      const upcoming = allEvents.filter((event: Event) => new Date(event.data) > now).sort(compareEvents);
-      setEvents(upcoming);
+      // allEvents is Event[]
+      setEvents(allEvents);
     })();
 
     const themeValue = typeof window !== "undefined" ? window.localStorage.getItem("fibsync-theme") : null;
@@ -82,47 +111,56 @@ export default function EventList() {
     return () => window.removeEventListener("storage", handleStorage);
   }, []);
 
-  const filteredEvents = useMemo(() => {
-    let filtered = [...events];
+  // Create a flattened array for filtering/rendering
+  const flattenedEvents = useMemo(() => flattenEvents(events), [events]);
 
+  const filteredEvents = useMemo(() => {
+    let filtered = [...flattenedEvents];
+
+    // Period
     if (filterTime === "nextMonth") {
       const now = new Date();
       const { start, end } = getMonthRange(now);
       filtered = filtered.filter((e) => {
-        const d = new Date(e.data);
+        const d = new Date(e.date);
         return d >= start && d < end;
       });
     }
 
+    // Assignatura
     if (filterAssignatura) {
       filtered = filtered.filter((e) => e.assignatura === filterAssignatura);
     }
 
+    // Grup
     if (filterGrup) {
-      filtered = filtered.filter(
-        (e) =>
-          e.grup === undefined ||
-          e.grup === null ||
-          `${e.grup}` === filterGrup
+      filtered = filtered.filter((e) =>
+        e.grup === undefined ||
+        e.grup === null ||
+        `${e.grup}` === filterGrup
       );
     }
 
-    return filtered;
-  }, [events, filterAssignatura, filterGrup, filterTime]);
+    // Only show future events
+    filtered = filtered.filter((e) => new Date(e.date) > new Date());
+
+    // Sort after filtering
+    return filtered.sort(compareEvents);
+  }, [flattenedEvents, filterAssignatura, filterGrup, filterTime]);
 
   const assignatures = useMemo(
-    () => unique(events.map((e) => e.assignatura)).sort(),
-    [events]
+    () => unique(flattenedEvents.map((e) => e.assignatura)).sort(),
+    [flattenedEvents]
   );
   const grups = useMemo(
     () =>
       unique(
-        events
+        flattenedEvents
           .map((e) => e.grup)
           .filter((g) => g !== undefined && g !== null)
           .map((g) => `${g}`)
       ).sort(),
-    [events]
+    [flattenedEvents]
   );
 
   const cssVars = {
@@ -247,7 +285,12 @@ export default function EventList() {
 
             return (
               <li
-                key={event.nom + event.data + event.assignatura + event.grup}
+                key={
+                  event.nom +
+                  event.date +
+                  event.assignatura +
+                  (event.grup !== undefined ? event.grup : "")
+                }
                 className="exam-card flex flex-col rounded-xl shadow border border-l-[6px] p-4 hover:scale-[1.015] transition-all"
                 style={{
                   borderLeft: `6px solid ${color}`,
@@ -301,7 +344,7 @@ export default function EventList() {
                   <span className="exam-date whitespace-nowrap" style={{
                     color: "var(--muted)"
                   }}>
-                    {formatEventDate(event.data)}
+                    {formatEventDate(event.date)}
                   </span>
                 </div>
               </li>
