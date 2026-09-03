@@ -676,6 +676,17 @@
             "data": [
                 {"dia":"2027-05-17"}
             ]
+        },
+        {
+            "nom":"Horari de Dilluns",
+            "desc":"Dimecres 14 d'octubre té horari de dilluns",
+            "type":"canvi d'horari",
+            "assignatura":"ALTRES",
+            "data" : [
+                {
+                    "dia":"2026-10-14"
+                }
+            ]
         }
     ]
 }
