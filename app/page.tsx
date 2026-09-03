@@ -4,6 +4,7 @@ import NowInClass from "@/components/NowInClass";
 import ExamsList from "@/components/ExamsList";
 import TimetableSection from "@/components/TimetableSection";
 import EventList from "@/components/EventList";
+import { colorsAssignatures } from "./lib/colors-assignatures";
 
 export default function Home() {
   return (
@@ -27,7 +28,14 @@ export default function Home() {
         <ExamsList />
       </Suspense>
       <footer className="site-footer">
-        <span>made with &lt;3 by uri | </span>
+        <span>
+          made with &lt;3 by{" "}
+          <a href="mailto:uri@uridev.cat" style={{ textDecoration:"underline" }}>
+            uri
+          </a>{" "}
+          |{" "}
+        </span>
+   
         <a
           className="site-footer__link"
           href="https://github.com/ItssUri/fibsync"
