@@ -286,9 +286,15 @@ export default function EventList() {
               color = FESTAFIB_RED;
               cardBg = festafibCardBg();
             } else if (event.assignatura.toLowerCase() === 'festiu') {
-              color = "#69d1ce";
-              cardBg = hexToRgba20(color);
-            } else {
+              if (event.nom.toLowerCase() === 'diada de catalunya') {
+                color = "#C1121F";
+                cardBg = "linear-gradient(to right, transparent 0 40%, rgba(193,18,31,0.15) 76% 100%) 0 0 / 100% 13% no-repeat, linear-gradient(to right, transparent 0 40%, rgba(193,18,31,0.15) 76% 100%) 0 29% / 100% 13% no-repeat, linear-gradient(to right, transparent 0 40%, rgba(193,18,31,0.15) 76% 100%) 0 58% / 100% 13% no-repeat, linear-gradient(to right, transparent 0 40%, rgba(193,18,31,0.15) 76% 100%) 0 87% / 100% 13% no-repeat, linear-gradient(to right, rgba(255,224,0,0.14), rgba(255,224,0,0.0))";
+              } else {
+                color = "#69d1ce";
+                cardBg = hexToRgba20(color);
+              }
+            }
+            else {
               color = getColorAssignatura(event.assignatura);
               cardBg = hexToRgba20(color);
             }
