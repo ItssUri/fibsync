@@ -710,6 +710,17 @@
           "dia": "2026-12-21"
         }
       ]
+    },
+        {
+      "nom": "Publicació de l'enunciat del joc",
+      "desc": "Curs d'EDA Curs 2026/2027 Q1 del Jutge (www.jutge.org).",
+      "type": "Enunciat",
+      "assignatura": "EDA",
+      "data": [
+        {
+          "dia": "2026-11-20"
+        }
+      ]
     }
   ]
 }
