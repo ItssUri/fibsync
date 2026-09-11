@@ -711,7 +711,7 @@
         }
       ]
     },
-        {
+    {
       "nom": "Publicació de l'enunciat del joc",
       "desc": "Curs d'EDA Curs 2026/2027 Q1 del Jutge (www.jutge.org).",
       "type": "Enunciat",
@@ -719,6 +719,41 @@
       "data": [
         {
           "dia": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "nom": "Control PEC1",
+      "type": "control",
+      "assignatura": "EEE",
+      "data": [
+        {
+          "grup": 10,
+          "dia": "2026-09-21"
+        }
+      ]
+    },
+
+    {
+      "nom": "Control PEC2",
+      "type": "control",
+      "assignatura": "EEE",
+      "data": [
+        {
+          "grup": 10,
+          "dia": "2026-10-08"
+        }
+      ]
+    },
+
+    {
+      "nom": "Control PEC3",
+      "type": "control",
+      "assignatura": "EEE",
+      "data": [
+        {
+          "grup": 10,
+          "dia": "2026-10-30"
         }
       ]
     }
