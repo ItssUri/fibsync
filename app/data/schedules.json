@@ -17,7 +17,7 @@
       "inici": "12:00",
       "durada": 2,
       "tipus": "P",
-      "aules": "A6201",
+      "aules": "A5204",
       "idioma": "Català"
     },
     {
@@ -37,7 +37,7 @@
       "inici": "10:00",
       "durada": 1,
       "tipus": "P",
-      "aules": "D6004",
+      "aules": "A5205",
       "idioma": "English"
     },
     {
@@ -57,7 +57,7 @@
       "inici": "11:00",
       "durada": 1,
       "tipus": "P",
-      "aules": "D6004",
+      "aules": "A5205",
       "idioma": "English"
     },
     {
@@ -67,7 +67,7 @@
       "inici": "12:00",
       "durada": 2,
       "tipus": "T",
-      "aules": "A3001",
+      "aules": "A5102",
       "idioma": "Català"
     },
     {
@@ -107,7 +107,7 @@
       "inici": "10:00",
       "durada": 2,
       "tipus": "L",
-      "aules": "A3106",
+      "aules": "A5204",
       "idioma": "Català"
     },
     {
@@ -159,7 +159,7 @@
       "inici": "10:00",
       "durada": 2,
       "tipus": "P",
-      "aules": "A4206",
+      "aules": "A6201",
       "idioma": "Castellano"
     },
     {
@@ -179,7 +179,7 @@
       "inici": "12:00",
       "durada": 1,
       "tipus": "P",
-      "aules": "D6004",
+      "aules": "A5205",
       "idioma": "Català"
     },
     {
@@ -199,7 +199,7 @@
       "inici": "13:00",
       "durada": 1,
       "tipus": "P",
-      "aules": "D6004",
+      "aules": "A5205",
       "idioma": "Català"
     },
     {
@@ -219,7 +219,7 @@
       "inici": "12:00",
       "durada": 2,
       "tipus": "T",
-      "aules": "A3205",
+      "aules": "A5002",
       "idioma": "Català"
     },
     {
@@ -229,7 +229,7 @@
       "inici": "08:00",
       "durada": 2,
       "tipus": "T",
-      "aules": "A4002",
+      "aules": "A5002",
       "idioma": "Català"
     },
     {
@@ -239,7 +239,7 @@
       "inici": "10:00",
       "durada": 2,
       "tipus": "L",
-      "aules": "A6001",
+      "aules": "A5102",
       "idioma": "Castellano"
     },
     {
@@ -249,7 +249,7 @@
       "inici": "12:00",
       "durada": 2,
       "tipus": "T",
-      "aules": "A6002",
+      "aules": "A5002",
       "idioma": "English"
     }
   ],
@@ -311,7 +311,7 @@
       "inici": "10:00",
       "durada": 2,
       "tipus": "P",
-      "aules": "A3105",
+      "aules": "A5203",
       "idioma": "English"
     },
     {
@@ -331,7 +331,7 @@
       "inici": "12:00",
       "durada": 1,
       "tipus": "P",
-      "aules": "A6203",
+      "aules": "A5202",
       "idioma": "Castellano"
     },
     {
@@ -351,7 +351,7 @@
       "inici": "13:00",
       "durada": 1,
       "tipus": "P",
-      "aules": "A6203",
+      "aules": "A5202",
       "idioma": "Castellano"
     },
     {
@@ -381,7 +381,7 @@
       "inici": "12:00",
       "durada": 2,
       "tipus": "T",
-      "aules": "A3205",
+      "aules": "A5002",
       "idioma": "Català"
     },
     {
@@ -391,7 +391,7 @@
       "inici": "08:00",
       "durada": 2,
       "tipus": "T",
-      "aules": "A4002",
+      "aules": "A5002",
       "idioma": "Català"
     },
     {
@@ -401,7 +401,7 @@
       "inici": "10:00",
       "durada": 2,
       "tipus": "L",
-      "aules": "A3203",
+      "aules": "A5203",
       "idioma": "English"
     },
     {
@@ -411,9 +411,9 @@
       "inici": "12:00",
       "durada": 2,
       "tipus": "T",
-      "aules": "A6002",
+      "aules": "A5002",
       "idioma": "English"
-    }
+    } 
   ],
   "aso": [
     {
@@ -451,9 +451,9 @@
       "grup": "32",
       "dia_setmana": 2,
       "inici": "10:00",
-      "durada": 1,
+      "durada": 2,
       "tipus": "P",
-      "aules": "D6004",
+      "aules": "A5205",
       "idioma": "English"
     },
     {
@@ -464,16 +464,6 @@
       "durada": 2,
       "tipus": "L",
       "aules": "C6S308",
-      "idioma": "English"
-    },
-    {
-      "codi_assig": "EDA",
-      "grup": "32",
-      "dia_setmana": 2,
-      "inici": "11:00",
-      "durada": 1,
-      "tipus": "P",
-      "aules": "D6004",
       "idioma": "English"
     },
     {
@@ -513,7 +503,7 @@
       "inici": "12:00",
       "durada": 2,
       "tipus": "P",
-      "aules": "A3101",
+      "aules": "A5204",
       "idioma": "English"
     },
     {
@@ -523,7 +513,7 @@
       "inici": "08:00",
       "durada": 2,
       "tipus": "L",
-      "aules": "A6204",
+      "aules": "A5204",
       "idioma": "English"
     },
     {
@@ -548,14 +538,14 @@
       "aules": "A6102",
       "idioma": "Català"
     },
-    {
+    { 
       "codi_assig": "PE",
       "grup": "32",
       "dia_setmana": 1,
       "inici": "12:00",
       "durada": 2,
       "tipus": "P",
-      "aules": "A6201",
+      "aules": "A5204",
       "idioma": "Català"
     },
     {
@@ -575,7 +565,7 @@
       "inici": "10:00",
       "durada": 1,
       "tipus": "P",
-      "aules": "D6004",
+      "aules": "A5205",
       "idioma": "English"
     },
     {
@@ -595,7 +585,7 @@
       "inici": "11:00",
       "durada": 1,
       "tipus": "P",
-      "aules": "D6004",
+      "aules": "A5205",
       "idioma": "English"
     },
     {
@@ -605,7 +595,7 @@
       "inici": "12:00",
       "durada": 2,
       "tipus": "T",
-      "aules": "A3001",
+      "aules": "A5102",
       "idioma": "Català"
     },
     {
@@ -645,7 +635,7 @@
       "inici": "10:00",
       "durada": 2,
       "tipus": "L",
-      "aules": "A3106",
+      "aules": "A5204",
       "idioma": "Català"
     },
     {
@@ -697,7 +687,7 @@
       "inici": "10:00",
       "durada": 2,
       "tipus": "P",
-      "aules": "A4206",
+      "aules": "A6201",
       "idioma": "Castellano"
     },
     {
@@ -717,7 +707,7 @@
       "inici": "12:00",
       "durada": 1,
       "tipus": "P",
-      "aules": "D6004",
+      "aules": "A5205",
       "idioma": "Català"
     },
     {
@@ -737,7 +727,7 @@
       "inici": "13:00",
       "durada": 1,
       "tipus": "P",
-      "aules": "D6004",
+      "aules": "A5205",
       "idioma": "Català"
     },
     {
@@ -757,7 +747,7 @@
       "inici": "12:00",
       "durada": 2,
       "tipus": "T",
-      "aules": "A3205",
+      "aules": "A5002",
       "idioma": "Català"
     },
     {
@@ -767,7 +757,7 @@
       "inici": "08:00",
       "durada": 2,
       "tipus": "T",
-      "aules": "A4002",
+      "aules": "A5002",
       "idioma": "Català"
     },
     {
@@ -777,7 +767,7 @@
       "inici": "10:00",
       "durada": 2,
       "tipus": "L",
-      "aules": "A6001",
+      "aules": "A5102",
       "idioma": "Castellano"
     },
     {
@@ -787,7 +777,7 @@
       "inici": "12:00",
       "durada": 2,
       "tipus": "T",
-      "aules": "A6002",
+      "aules": "A5002",
       "idioma": "English"
     }
   ],
@@ -819,7 +809,7 @@
       "inici": "12:00",
       "durada": 1,
       "tipus": "P",
-      "aules": "A6203",
+      "aules": "A5202",
       "idioma": "Castellano"
     },
     {
@@ -839,7 +829,7 @@
       "inici": "13:00",
       "durada": 1,
       "tipus": "P",
-      "aules": "A6203",
+      "aules": "A5202",
       "idioma": "Castellano"
     },
     {
@@ -859,7 +849,7 @@
       "inici": "16:00",
       "durada": 2,
       "tipus": "L",
-      "aules": "A6104",
+      "aules": "A5205",
       "idioma": "Català"
     },
     {
@@ -889,7 +879,7 @@
       "inici": "14:00",
       "durada": 2,
       "tipus": "P",
-      "aules": "A6206",
+      "aules": "A5205",
       "idioma": "Català"
     },
     {
@@ -899,7 +889,7 @@
       "inici": "08:00",
       "durada": 2,
       "tipus": "T",
-      "aules": "A4002",
+      "aules": "A5002",
       "idioma": "Català"
     },
     {
@@ -924,7 +914,7 @@
     }
   ],
   "Voltius": [
-    {
+    { 
       "codi_assig": "CI",
       "grup": "12",
       "dia_setmana": 1,
@@ -961,7 +951,7 @@
       "inici": "10:00",
       "durada": 2,
       "tipus": "P",
-      "aules": "A4206",
+      "aules": "A6201",
       "idioma": "Castellano"
     },
     {
@@ -1001,7 +991,7 @@
       "inici": "13:00",
       "durada": 1,
       "tipus": "P",
-      "aules": "D6004",
+      "aules": "A5205",
       "idioma": "Català"
     },
     {
@@ -1021,7 +1011,7 @@
       "inici": "12:00",
       "durada": 2,
       "tipus": "T",
-      "aules": "A3205",
+      "aules": "A5002",
       "idioma": "Català"
     },
     {
@@ -1031,7 +1021,7 @@
       "inici": "08:00",
       "durada": 2,
       "tipus": "T",
-      "aules": "A4002",
+      "aules": "A5002",
       "idioma": "Català"
     },
     {
@@ -1041,7 +1031,7 @@
       "inici": "10:00",
       "durada": 2,
       "tipus": "L",
-      "aules": "A6001",
+      "aules": "A5102",
       "idioma": "Castellano"
     },
     {
@@ -1051,7 +1041,7 @@
       "inici": "12:00",
       "durada": 2,
       "tipus": "T",
-      "aules": "A6002",
+      "aules": "A5002",
       "idioma": "English"
     }
   ]
